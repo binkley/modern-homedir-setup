@@ -1,0 +1,9 @@
+# Specific to BASH
+# Tweak to your liking
+PS1='\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n🌼 '
+function __err_trap {
+    echo -e "\e[1;31m(Exit $?)\e[0;35m $BASH_COMMAND\e[0m" >&2
+}
+trap __err_trap ERR
+
+export PROMPT_COMMAND='history -a'
