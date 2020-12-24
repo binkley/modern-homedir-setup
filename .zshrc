@@ -95,13 +95,17 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#plugins=(git vi-mode common-aliases alias-tips zsh-syntax-highlighting)
+plugins=(git vi-mode common-aliases alias-tips zsh-syntax-highlighting)
 
-#source $ZSH/oh-my-zsh.sh
+#  Create a test for existence of the omz directory.  If it exists, source the omz.sh
+#  otherwise, run the unattended install command
+if [[ -d "$ZSH" ]]; then
+    source $ZSH/oh-my-zsh.sh
+else
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+fi
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -129,7 +133,6 @@ alias pip="pip3"
 alias cat="batcat"
 alias ls="exa"
 alias mutt="neomutt"
-alias evpn="expressvpn"
 alias calc="autoload zcalc; zcalc"
 alias vim="nvim"
 
@@ -153,7 +156,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
 # set nvim up as man pager
-export MANPAGER='nvim +Man!'
+# export MANPAGER='nvim +Man!'
 
 # export rust source
 export RUST_SRC_PATH={HOME}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
