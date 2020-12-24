@@ -30,7 +30,6 @@ $ $EDITOR .gitignore  # UNIX-like systems define EDITOR; YMMV
 $ git add .
 $ git commit -m Init
 ```
-
 ## Bash
 
 Presently most files are BASH-specific.
@@ -53,6 +52,10 @@ Bash_](https://www.gnu.org/software/bash/manual/html_node/Invoking-Bash.html)
 for details on BASH startup (_ie_, "profile" _vs_ "rc" files).
 
 ## Zsh
+
+Using [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) is highly recommended if you are going to use zsh as your primary shell.
+To that end, the .zshrc file has been updated to automatically isntall omz if it isn't available when the shell starts,
+and the plugins have been uncommented.
 
 See [Zsh setup](.zshrc) for Zsh.
 
