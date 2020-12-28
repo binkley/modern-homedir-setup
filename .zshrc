@@ -26,7 +26,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Expects oh-my-zsh to be installed
 # Path to your oh-my-zsh installation.
-# export ZSH="${HOME}/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Expects oh-my-zsh to be installed
 # Set name of the theme to load --- if set to "random", it will
@@ -71,7 +71,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #Expects oh-my-zsh to be installed
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -141,7 +141,7 @@ alias vim="nvim"
 
 # Expects Rust to be installed
 # Adding Rust lang toolchain to path
-export PATH="{HOME}/.cargo/bin":$PATH
+export PATH="$HOME/.cargo/bin":$PATH
 
 # Adding python to PATH
 export PATH="/usr/bin/python3":$PATH
@@ -159,4 +159,4 @@ export NVM_DIR="$HOME/.nvm"
 # export MANPAGER='nvim +Man!'
 
 # export rust source
-export RUST_SRC_PATH={HOME}/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
+export RUST_SRC_PATH=$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
