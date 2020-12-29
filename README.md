@@ -30,6 +30,7 @@ $ $EDITOR .gitignore  # UNIX-like systems define EDITOR; YMMV
 $ git add .
 $ git commit -m Init
 ```
+
 ## Bash
 
 Presently most files are BASH-specific.
@@ -46,6 +47,9 @@ The BASH dot-files are divided into:
 - [`.bash_sessions_disable`](.bash_sessions_disable) -- Mac-specific; ignored
   for other OSes
 - [`.bashrc`](.bashrc) -- Applied to any BASH started by your account
+- [`.inputrc`](.inputrc) -- Configures the readline library,
+  [used by BASH](https://www.gnu.org/software/bash/manual/html_node/Readline-Interaction.html)
+  to edit your command line, tab completion, _et al_
 
 See [_Invoking
 Bash_](https://www.gnu.org/software/bash/manual/html_node/Invoking-Bash.html)
@@ -53,13 +57,14 @@ for details on BASH startup (_ie_, "profile" _vs_ "rc" files).
 
 ## Zsh
 
-Using [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) is highly recommended if you are going to use zsh as your primary shell.
-To that end, the .zshrc file has been updated to automatically isntall omz if it isn't available when the shell starts,
-and the plugins have been uncommented.
+Using [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) is highly recommended if
+you are going to use zsh as your primary shell. To that end, the .zshrc file
+has been updated to automatically install _omz_ if it isn't available when the
+shell starts, and the plugins have been uncommented.
 
 See [Zsh setup](.zshrc) for Zsh.
 
 ## Contributors
 
-* Brian Oxley
-* Clay Ratliff
+* [Brian Oxley](https://github.com/binkley)
+* [Clay Ratliff](https://github.com/Clay-Ratliff)
