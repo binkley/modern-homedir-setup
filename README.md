@@ -11,6 +11,10 @@ $ cd  # Most shells will change to your home directory
 $ git init .
 ```
 
+Then copy in dot-files for your shell (BASH or ZSH).  **NB** &mdash;
+[`.editorconfig`](.editorconfig) is for contributing to this repository, not 
+for your shell setup.
+
 Before you commit files, you should adjust `~/.gitignore` to your tastes.  
 Note that `~/.gitignore` is _global_ to your account.
 See [the documentation](https://git-scm.com/docs/gitignore) for more details,
@@ -28,14 +32,12 @@ Depending on your preferences and setup, continue with:
 ```shell
 $ $EDITOR .gitignore  # UNIX-like systems define EDITOR; YMMV
 $ git add .
-$ git commit -m Init
+$ git commit -m Init  # Or any suitable commit message
 ```
 
 ## Bash
 
-Presently most files are BASH-specific.
-
-The BASH dot-files are divided into:
+The BASH dot-files are:
 
 - [`.bash_aliases`](.bash_aliases) -- Keep your shell aliases here
 - [`.bash_functions`](.bash_functions) -- Keep your generalshell functions
@@ -57,12 +59,14 @@ for details on BASH startup (_ie_, "profile" _vs_ "rc" files).
 
 ## Zsh
 
+The ZSH dot-files are:
+
+- [`.zshrc`](.zshrc) -- Everything in one file :)
+
 Using [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) is highly recommended if
 you are going to use zsh as your primary shell. To that end, the .zshrc file
 has been updated to automatically install _omz_ if it isn't available when the
 shell starts, and the plugins have been uncommented.
-
-See [Zsh setup](.zshrc) for Zsh.
 
 ## Contributors
 
