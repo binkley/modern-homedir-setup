@@ -243,8 +243,6 @@ export EDITOR=$VISUAL
 # Example when using GNU replacements for system-provided versions:
 #export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib:$PKG_CONFIG_PATH
 
-# When using `thefuck` tool for automated cmd-line aliasing:
-#. <(thefuck --alias fix)
 # When using `jenv` to control your local Java version:
 #. <(jenv init -)
 # When using Go:

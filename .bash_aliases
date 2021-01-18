@@ -9,6 +9,3 @@ done
 alias vi=vim
 
 alias funny='fortune -s | cowsay | lolcat; echo'
-
-# Do not print nasty language on the console when you use this tool:
-#eval $(thefuck --alias fix)
